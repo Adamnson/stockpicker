@@ -14,3 +14,23 @@
 #         '0' ( index of lowest price in price array), retrun indices
 # step 4: else find the next lowest and repeat step 2-3
 
+def stock_picker(price_array)
+    p price_array
+    prices = price_array
+    buy_price_idx = prices.index(prices.min)
+    sell_price_idx = prices.index(prices.max)
+    if (buy_price_idx < sell_price_idx )
+        return [buy_price_idx, sell_price_idx]
+    else
+        # while (prices.index(prices.max) < prices[buy_price_idx])
+        #     prices.map! {|price| price-prices.min}
+        #     p prices
+        # end
+    end
+end
+
+ans = stock_picker([0,3,6,9,15,8,6,1,10])
+p ans
+
+# ans = stock_picker([17,3,6,9,15,8,6,1,10])
+# p ans
