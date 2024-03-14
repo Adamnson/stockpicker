@@ -3,6 +3,8 @@
 # the function should return a pair of days representing the best day
 # to buy and the best day to sell for max profit
 
+# credit where it's due 
+# https://github.com/abbygriffiths/the_odin_project/blob/main/stock_picker.rb
 
 def stock_picker(price_array)
     price_array
@@ -15,7 +17,6 @@ def stock_picker(price_array)
     .map { |_, day| day }
 end
 
-# simple case buy_idx < sell_idx
 ans = stock_picker([0,3,6,9,15,8,6,1,10])
 p ans
 
